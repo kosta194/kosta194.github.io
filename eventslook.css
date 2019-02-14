@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Staatliches';
+}
+
+body {
+background: rgb(45,232,230); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(45,232,230,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8e6', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+aside {
+  color: black;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em;
+
+}
+
+img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.img-menu {
+  width: 40px;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  display: none;
+}
+
+nav {
+  background: white;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.95);
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 20000;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: none;
+}
+
+.meni {
+  font-style: #FF8200;
+  font-size: 1.5em;
+  font-style: bold;
+  max-height: 100vh;
+}
+
+.meni-gumb {
+  padding: 5vh;
+  color: #32A5CC;
+}
+
+main {
+  padding: 1em 1.4em;
+}
+
+.main-display {
+  display: none;
+}
+
+.img-main-logo{
+  display: none;
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+  margin-top: 2em;
+  text-align: center;
+  cursor: default;
+
+}
+
+h1 {
+  margin: 0;
+margin-top: -5px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.cta {
+  display: block;
+  color: #fff;
+  background: blue;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 2em 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  min-width: 13em;
+	background: #23f57c; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #23f57c 2%, #2de8e6 60%, #2389f5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23f57c', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.noga {
+  width: 100%;
+}
+
+.noga-item-box {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 0.5vh;
+  padding: 0em;
+  background-color: none;
+  display: inline-flex;
+  margin: 0;
+  z-index: 30000;
+}
+
+.band-header{
+  margin-bottom: 1em;
+}
+
+.photo{
+  display: block;
+  text-align: center;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  width: auto;
+  z-index: 1000;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+  display: block;
+}
+
+.noga-slike {
+  display: inline-block;
+  width: 10em;
+  z-index: 30000;
+  background-color: none;
+}
+
+.main-logo-head {
+  display: none;
+}
+
+div.dogodek {
+  padding-top: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,87,130, 0.55);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
+
+div.opis-dogodka {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    display: grid;
+    grid-template-columns: minmax(min-content, 300px) auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav {
+    background: none;
+    position: absolute;
+    margin-top: 5em;
+    height: auto;
+
+  }
+
+  figcaption {
+    padding-left: 1em;
+    display: block;
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: bold;
+    padding-top: 0;
+    font-style: black;
+    margin-top: 1em;
+    position: absolute;
+
+  }
+
+  .img-menu {
+    display: none;
+  }
+
+  aside{
+    background: rgba(255, 62, 143, 0.08);
+    padding: 0;
+    min-height: 100px;
+    margin-bottom: 0;
+    max-width: 300px;
+	  -webkit-transition: background 0.8s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.8s;
+	  }
+
+    aside:hover{
+      background: rgba(255,250,75, 0.95);
+  		}
+
+    main {
+      padding: 0em;
+      padding-top: 2em;
+      background-size: 100%;
+    }
+
+  .main-display {
+    display: block;
+    margin-left: 5em;
+    float: center;
+    position: fixed;
+    background: none;
+  }
+
+  .img-main-logo {
+    display: block;
+    max-width: 200%;
+    max-height: auto;
+    margin: 0;
+    text-align: center;
+    cursor: default;
+  }
+
+  #avatar {
+    background: none;
+    margin: 0;
+  }
+
+
+  ul {
+    display: block;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+    margin-top: 0;
+  }
+
+  .noga-slike {
+    width: 8em;
+    margin: 0;
+    background-color: none;
+    float: left;
+     }
+
+   footer {
+     background: none;
+     position: fixed;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     padding-left: 0em;
+     padding-right: 0em;
+     padding-top: 0em;
+     width: minmax(min-content, 300px);
+     max-width: 300px;
+ 	   -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+     transition: background 0.5s;
+   }
+
+   footer:hover{
+ 	   background: #44E863;
+   }
+
+  .noga-item-box {
+    float: left;
+    background: none;
+    padding: 1em;
+    margin-left: 7em;
+    margin-bottom: 7em;
+    margin-top: 7em;
+    font-size: 4px;
+	 }
+
+  .meni {
+    font-style: #FF1953;
+    font-size: 1.8em;
+    font-style: bold;
+    margin-top: 0;
+    max-height: 100%;
+  }
+
+  .photo{
+    display: block;
+    text-align: center;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: auto;
+    z-index: 1000;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+ .meni-gumb {
+     padding: 25px;
+    padding-left: 75px;
+    color: black;
+    width: 200px;
+	text-shadow: -1px 1px white;
+  }
+
+  .meni-gumb:hover{
+      color: #3eceff;
+    background: white;
+	text-shadow: none;
+	transition: 0.35s;
+    }
+
+  .main-logo-head {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    width: 80%;
+    display: grid;
+    align-content: right;
+    margin: auto;
+  }
+
+  .img-main-logo {
+    display: none;
+  }
+
+  ul li a .noga-slike {
+    font-size: none;
+    display: none;
+    padding: 4.5em 1.5em;
+    background-color: none;
+    float: left;
+  }
+
+
+
+}

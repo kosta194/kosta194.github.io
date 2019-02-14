@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body, html {
+      margin: 0;
+    font-family: 'Staatliches';
+  }
+
+  body {
+    background: #23f57c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #23f57c 2%, #2de8e6 60%, #2389f5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23f57c', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Staatliches';
+  }
+
+.meni {
+    font-family: 'Staatliches';
+}
+
+.img-main-logo1 {
+  margin-top: 10%;
+  margin-left: 35vw;
+  float: center;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.9s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Staatliches';
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 1.5s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px ;    font-family: 'Staatliches';
+  }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <nav>
+      <ul class='meni'>
+        <li><a href="index.html" class='meni-gumb'>Domov</a></li>
+        <li><a href="band.html" class='meni-gumb'>Bend</a></li>
+        <li><a href="events.html" class='meni-gumb'>Špili</a></li>
+        <li><a href="cv.html" class='meni-gumb'>Odigrano</a></li>
+        <li><a href="contact.html" class='meni-gumb'>Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">  <img class='img-main-logo1' style="width:50vh;heighft:auto;" src="images/Groovocado-Logo-Avokado-Crnl.png"></span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</body>
+</html>

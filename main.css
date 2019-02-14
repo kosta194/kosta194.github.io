@@ -1,0 +1,472 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body, html {
+  height: calc(100% - 2em);
+  margin: 0;
+  font-family: 'Staatliches';
+}
+
+body {
+  background: rgb(45,232,230); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(45,232,230,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8e6', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.img-main-logo1 {
+position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+top: 50%;
+  width: 50%;
+  margin-top: 10%;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,250,75, 0.99);
+  overflow-y: hidden;
+  transition: 0.9s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 50%;
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Staatliches';
+opacity: 0.95;
+margin-left: auto;
+margin-right: auto;
+background: none;
+}
+
+.overlay a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FF3E8F;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #3eceff;
+background: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  color: black;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em;
+}
+
+img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.img-menu {
+  width: 40px;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  display: none;
+}
+
+nav {
+  background: white;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.95);
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 20000;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: none;
+}
+
+.meni {
+  font-style: #FF8200;
+  font-size: 1.5em;
+  font-style: bold;
+  max-height: 100vh;
+}
+
+.meni-gumb {
+  padding: 5vh;
+  color: #32A5CC;
+}
+
+main {
+  padding: 1em 1.4em;
+}
+
+.main-display {
+  display: none;
+}
+
+.img-main-logo{
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+  margin-top: 2em;
+  text-align: center;
+  cursor: default;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.cta {
+  display: block;
+  color: #fff;
+  background: blue;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 2em 0;
+}
+
+.noga {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  background: none;
+  width: auto;
+  height: auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  }
+
+
+.noga-item-box {
+  text-decoration: none;
+  text-transform: none;
+  padding: 0em;
+  background-color: none;
+  display: inline-flex;
+  margin: 0;
+}
+
+li {
+  display: block;
+}
+
+.noga-slike {
+  display: inline-block;
+  width: 10em;
+  background-color: none;
+}
+
+.main-logo-head {
+  display: none;
+}
+
+@media screen and (max-height: 700px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px ;    font-family: 'Staatliches';
+  }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+}
+
+
+@media only screen and (min-width: 769px) {
+
+  body {
+    display: grid;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav {
+    background: none;
+    position: relative;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+  }
+
+  figcaption {
+    display: block;
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: bold;
+    padding-top: 0;
+    font-style: black;
+    margin-top: 1em;
+    position: absolute;
+
+  }
+
+  .img-menu {
+    display: none;
+  }
+
+  aside{
+    background: white;
+    padding: 0;
+    min-height: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    display: none;
+
+  }
+
+  main {
+    padding: 0em;
+    padding-top: 2em;
+    background-size: 100%;
+  }
+
+  .main-display {
+    display: block;
+    margin-left: 5em;
+    float: center;
+    position: fixed;
+    background: none;
+  }
+
+  .img-main-logo {
+    display: block;
+    max-width: 200%;
+    max-height: auto;
+    margin: 0;
+    text-align: center;
+    cursor: default;
+  }
+
+  #avatar {
+    background: none;
+    margin: 0;
+  }
+
+
+  ul {
+    display: block;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+    margin-top: 0;
+  }
+
+  .noga-slike {
+    width: 25px;
+    margin: 0;
+    background-color: none;
+
+   }
+
+  .noga {
+    background: none;
+    position: relative;
+    left: 5vw;
+    bottom: 0;
+    padding-top: 0em;
+	  margin-left: auto;
+	  margin-right: auto;
+    width: 100%;
+
+  }
+
+  .noga-item-box {
+	  background: none;
+    padding: 1em;
+	  position: relative;
+    margin-left: auto;
+	  margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+	 }
+
+  .meni {
+    font-style: #FF1953;
+    font-size: 1.8em;
+    font-style: bold;
+    margin-top: 0;
+    max-height: 100%;
+  }
+
+  .meni-gumb {
+    padding: 1em;
+    padding-left: 0em;
+    color: #32A5CC;
+    width: auto;
+  }
+
+  .main-logo-head {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    width: 80%;
+    display: grid;
+    align-content: right;
+    margin: auto;
+  }
+
+  .img-main-logo {
+    display: none;
+  }
+
+  ul li a .noga-slike {
+    font-size: none;
+    display: block;
+    padding: 0em 1.5em;
+    background-color: none;
+    float: center;
+    margin-left: auto;
+	  margin-right: auto;
+  }
+
+  .meni {
+    font-family: 'Staatliches';
+}
+
+.img-main-logo1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  width: 50%;
+  margin-top: 10%;
+  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.5s;
+}
+
+  .img-main-logo1:hover{
+  background-color: rgba(255,250,75, 0.95);
+
+  }
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,250,75, 0.95);
+  overflow-y: hidden;
+  transition: 0.9s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 50%;
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Staatliches';
+opacity: 0.95;
+margin-left: auto;
+margin-right: auto;
+background: none;
+}
+
+.overlay a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FF3E8F;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #3eceff;
+background: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-height: 600px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px ;    font-family: 'Staatliches';
+  }
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+}
