@@ -114,6 +114,9 @@ h1 {
 p {
   font-size: 1.1em;
   line-height: 1.5em;
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .cta {
@@ -184,7 +187,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+box-shadow: {0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {
@@ -218,6 +221,15 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
+
+h3 {
+  display: none;
+}
+
+h4 {
+  display: none;
+}
+
 
 @media only screen and (min-width: 769px) {
 
@@ -301,36 +313,43 @@ div.container {
     margin: 0;
     background-color: none;
     float: left;
-     }
+    -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+    }
+
+  .noga-slike:hover{
+    -webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */
+    filter: invert(0%);
+  }
 
   footer {
-   background: none;
-   position: fixed;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   padding-left: 0em;
-   padding-right: 0em;
-   padding-top: 0em;
-   width: minmax(min-content, 300px);
-   max-width: 300px;
- 	 -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
-   transition: background 0.5s;
-     }
+    background: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
+    width: minmax(min-content, 300px);
+	  -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
+  }
 
   footer:hover{
-   	background: #FF9F3F;;
-   }
+	background: #44E863;
 
-   .noga-item-box {
-     float: left;
-     background: none;
-     padding: 1em;
-     margin-left: 7em;
-     margin-bottom: 7em;
-     margin-top: 7em;
-     font-size: 4px;
-    }
+  }
+
+  .noga-item-box {
+    float: left;
+    background: none;
+    padding: 0em;
+    margin-left: 7em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    font-size: 4px;
+	 }
 
   .meni {
     font-style: #FF1953;
@@ -408,6 +427,7 @@ div.container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.0);
     text-align: center;
     height: 50%;
+    transition: 0.3s;
     }
 
   div.container {
@@ -424,15 +444,16 @@ div.container {
     height: 0;
     }
 
-h2.container{
-  padding: 10px;
+h2{
+  text-shadow: -1px 1px white;
 }
 
-p{
+p {
   margin-top: 20vh;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   text-shadow: -1px 1px white;
+  text-align: justify;
 }
 
   .fotka-clana:hover .container {
@@ -464,4 +485,15 @@ p{
     left: 0;
     top: 0;
     height: 100%;
+  }
+
+  h3 {
+    display: block;
+    background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(255,250,75,0) 50%, rgba(255,250,75,1) 51%, rgba(255,250,75,1) 84%, rgba(255,250,75,0) 86%, rgba(255,250,75,0) 88%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(255,250,75,0) 50%,rgba(255,250,75,1) 51%,rgba(255,250,75,1) 84%,rgba(255,250,75,0) 86%,rgba(255,250,75,0) 88%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(255,250,75,0) 50%,rgba(255,250,75,1) 51%,rgba(255,250,75,1) 84%,rgba(255,250,75,0) 86%,rgba(255,250,75,0) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#00fffa4b',GradientType=0 ); /* IE6-9 */}
+
+  h4 {
+    display: block;
   }

@@ -142,14 +142,7 @@ footer {
   padding-top: 5px;
   text-align: center;
   min-width: 13em;
-	background: #23f57c; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #23f57c 2%, #2de8e6 60%, #2389f5 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23f57c', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+	background: white;
 }
 
 .noga {
@@ -305,15 +298,39 @@ div.container {
     margin-top: 0;
   }
 
+  .opis {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: none;
+    border-radius: 25px;
+  }
+
+  .kontakt {
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: white;
+    padding-bottom: 2em;
+    border-radius: 25px;
+    margin: 2em;
+  }
+
   .noga-slike {
     width: 8em;
     margin: 0;
     background-color: none;
     float: left;
-     }
+    -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+    }
+
+  .noga-slike:hover{
+    -webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */
+    filter: invert(0%);
+  }
 
   footer {
-    background: none;
+    background: black;
     position: fixed;
     left: 0;
     right: 0;
@@ -322,8 +339,7 @@ div.container {
     padding-right: 0em;
     padding-top: 0em;
     width: minmax(min-content, 300px);
-    max-width: 300px;
-	-webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+	  -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
     transition: background 0.5s;
   }
 
@@ -335,10 +351,10 @@ div.container {
   .noga-item-box {
     float: left;
     background: none;
-    padding: 1em;
+    padding: 0em;
     margin-left: 7em;
-    margin-bottom: 7em;
-    margin-top: 7em;
+    margin-bottom: 0em;
+    margin-top: 0em;
     font-size: 4px;
 	 }
 
