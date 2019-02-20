@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 body, html {
-  height: calc(100% - 2em);
+  height: auto;
   margin: 0;
   font-family: 'Staatliches';
 }
@@ -22,7 +22,7 @@ aside {
   color: black;
   display: grid;
   grid-template-columns: auto 40px;
-  padding: 2em;
+  padding: 1em;
 
 }
 
@@ -32,8 +32,19 @@ img {
 }
 
 .img-menu {
-  width: 40px;
+  width: 15vw;
   cursor: pointer;
+  position: fixed;
+  right: 0;
+  margin-right: 5vh;
+  z-index: 1000000;
+  background: #FF1953;
+  opacity: 0.7;
+  border-radius: 100%;
+}
+
+.img-menu-web {
+  display: none;
 }
 
 figure {
@@ -46,10 +57,10 @@ figcaption {
 
 nav {
   background: white;
-}
+  }
 
 .active {
-  position: absolute;
+  position: fixed;
   display: block;
   background: rgba(255, 255, 255, 0.95);
   width: 50%;
@@ -57,6 +68,7 @@ nav {
   top: 0;
   height: 100%;
   z-index: 20000;
+
 }
 
 ul {
@@ -80,7 +92,7 @@ ul li a {
   font-size: 1.5em;
   font-style: bold;
   max-height: 100vh;
-}
+  }
 
 .meni-gumb {
   padding: 5vh;
@@ -98,13 +110,6 @@ main {
 
 .img-main-logo{
   display: none;
-  max-width: 100%;
-  max-height: auto;
-  margin: auto;
-  margin-top: 2em;
-  text-align: center;
-  cursor: default;
-
 }
 
 h1 {
@@ -112,25 +117,13 @@ h1 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 14px;
   line-height: 1.5em;
   text-align: justify;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.cta {
-  display: block;
-  color: #fff;
-  background: blue;
-  text-decoration: none;
-  padding: 8px 50px;
-  font-size: 1.2em;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 4px;
-  margin: 2em 0;
-}
 
 footer {
   position: fixed;
@@ -143,14 +136,8 @@ footer {
   padding-top: 5px;
   text-align: center;
   min-width: 13em;
-	background: #23f57c; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #23f57c 2%, #2de8e6 60%, #2389f5 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #23f57c 2%,#2de8e6 60%,#2389f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23f57c', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  background: black;
+z-index: 10001;
 }
 
 .noga {
@@ -175,19 +162,15 @@ footer {
 .photo{
   display: block;
   text-align: center;
-margin-bottom: 0em;
-margin-left: auto;
-margin-right: auto;
-  width: 70%;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   min-width: 50%;
-z-index: 1000
-position: relative;
- border-radius: 25px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-box-shadow: {0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {
@@ -199,7 +182,9 @@ li {
   width: 10em;
   z-index: 30000;
   background-color: none;
-}
+  -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+  filter: invert(100%);
+ }
 
 .main-logo-head {
   display: none;
@@ -213,13 +198,13 @@ margin-right: auto;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 position: relative;
-border-radius: 15px;
+border-radius: 7px;
 margin-bottom: 2em;
 }
 
 div.container {
   text-align: center;
-  padding: 10px 20px;
+  padding: 5px 10px;
 }
 
 h3 {
@@ -248,8 +233,8 @@ h4 {
   }
 
   figcaption {
+	display: none;
     padding-left: 1em;
-    display: block;
     text-align: center;
     font-size: 2.0em;
     font-weight: bold;
@@ -258,7 +243,24 @@ h4 {
     margin-top: 1em;
     position: fixed ;
   }
-
+  
+  .img-menu-web{
+  	display: block;
+    padding-left: 2em;
+    text-align: center;
+    padding-top: 0;
+    font-style: black;
+    margin-top: 1em;
+	position: fixed ;
+	width: 14em;
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	}
+  
+  .img-menu-web {
+	  cursor: initial;
+  }
+  
   .img-menu {
     display: none;
   }
@@ -288,7 +290,7 @@ h4 {
 
   .img-main-logo {
     display: block;
-    max-width: 200%;
+    max-width: 100%;
     max-height: auto;
     margin: 0;
     text-align: center;
@@ -454,6 +456,7 @@ p {
   margin-right: 30px;
   text-shadow: -1px 1px white;
   text-align: justify;
+  font-size: 20px;
 }
 
   .fotka-clana:hover .container {
@@ -492,7 +495,9 @@ p {
     background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(255,250,75,0) 50%, rgba(255,250,75,1) 51%, rgba(255,250,75,1) 84%, rgba(255,250,75,0) 86%, rgba(255,250,75,0) 88%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(255,250,75,0) 50%,rgba(255,250,75,1) 51%,rgba(255,250,75,1) 84%,rgba(255,250,75,0) 86%,rgba(255,250,75,0) 88%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(255,250,75,0) 50%,rgba(255,250,75,1) 51%,rgba(255,250,75,1) 84%,rgba(255,250,75,0) 86%,rgba(255,250,75,0) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#00fffa4b',GradientType=0 ); /* IE6-9 */}
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#00fffa4b',GradientType=0 ); /* IE6-9 */
+	border-radius: 100%;
+	}
 
   h4 {
     display: block;

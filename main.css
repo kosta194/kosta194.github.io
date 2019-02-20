@@ -10,81 +10,58 @@ body, html {
 
 body {
   background: rgb(45,232,230); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(45,232,230,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8e6', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
-background-repeat: no-repeat;
-background-attachment: fixed;
+  background: -moz-linear-gradient(-45deg, rgba(45,232,230,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(45,232,230,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8e6', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .img-main-logo1 {
-position: relative;
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
-top: 50%;
+  top: 50%;
   width: 50%;
-  margin-top: 10%;
+  margin-top: 0;
 }
 
 .overlay {
-  height: 0%;
+  height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(255,250,75, 0.99);
-  overflow-y: hidden;
-  transition: 0.9s;
+  background-color: rgba(255,250,75, 0);
 }
 
 .overlay-content {
   position: relative;
-  top: 15%;
-  width: 50%;
+  top: 45%;
+  width: 49%;
   text-align: center;
   margin-top: 0px;
   font-family: 'Staatliches';
-opacity: 0.95;
-margin-left: auto;
-margin-right: auto;
-background: none;
-}
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+ }
 
 .overlay a {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 0px;
   padding-right: 0px;
   text-decoration: none;
   font-size: 36px;
-  color: #FF3E8F;
+  color: white;
   display: block;
   transition: 0.3s;
 
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #3eceff;
-background: white;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  margin: 0;
-  padding: 0;
-}
-
-aside {
-  color: black;
-  display: grid;
-  grid-template-columns: auto 40px;
-  padding: 2em;
 }
 
 img {
@@ -106,22 +83,20 @@ figcaption {
 }
 
 nav {
-  background: white;
+  background: none;
 }
 
 .active {
   position: absolute;
   display: block;
   background: rgba(255, 255, 255, 0.95);
-  width: 50%;
-  left: 0;
-  top: 0;
+
   height: 100%;
   z-index: 20000;
 }
 
 ul {
-  display: none;
+  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -140,12 +115,19 @@ ul li a {
   font-style: #FF8200;
   font-size: 1.5em;
   font-style: bold;
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 .meni-gumb {
-  padding: 5vh;
-  color: #32A5CC;
+	margin: 4vh;
+	background: rgb(255,181,211); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(255,181,211,1) 1%, rgba(255,87,130,1) 24%, rgba(255,87,130,1) 78%, rgba(255,122,173,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(255,181,211,1) 1%,rgba(255,87,130,1) 24%,rgba(255,87,130,1) 78%,rgba(255,122,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(255,181,211,1) 1%,rgba(255,87,130,1) 24%,rgba(255,87,130,1) 78%,rgba(255,122,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb5d3', endColorstr='#ff7aad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: 5px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+	text-shadow: 1px 1px black;
 }
 
 main {
@@ -170,45 +152,36 @@ h1 {
   margin: 0;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.5em;
-}
 
-.cta {
-  display: block;
-  color: #fff;
-  background: blue;
-  text-decoration: none;
-  padding: 8px 50px;
-  font-size: 1.2em;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 4px;
-  margin: 2em 0;
-}
+ 
+  .noga-meni{
+	  display: none;
+  }
 
-.noga {
+footer {
   position: fixed;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
   bottom: 0;
-  background: none;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding-bottom: 0;
   padding-bottom: 5px;
   padding-top: 5px;
   text-align: center;
-  }
-
+  min-width: 13em;
+  background: black;
+z-index: 10001;
+}
 
 .noga-item-box {
   text-decoration: none;
   text-transform: none;
+  font-size: 0.5vh;
   padding: 0em;
   background-color: none;
   display: inline-flex;
   margin: 0;
+  z-index: 30000;
 }
 
 li {
@@ -218,7 +191,10 @@ li {
 .noga-slike {
   display: inline-block;
   width: 10em;
+  z-index: 30000;
   background-color: none;
+  -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+  filter: invert(100%);
 }
 
 .main-logo-head {
@@ -229,11 +205,7 @@ li {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px ;    font-family: 'Staatliches';
   }
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+ 
 
 }
 
@@ -326,6 +298,14 @@ li {
 
    }
 
+    .noga-meni{
+	  display: block;
+  }
+  
+  footer{
+    display: none;
+  }
+
   .noga {
     background: none;
     position: relative;
@@ -391,17 +371,17 @@ li {
     font-family: 'Staatliches';
 }
 
-.img-main-logo1 {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50%;
-  width: 50%;
-  margin-top: 10%;
-  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
-    transition: background-color 0.5s;
-}
+	.img-main-logo1 {
+	  position: relative;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  top: 50%;
+	  width: 50%;
+	  margin-top: 10%;
+	  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+		transition: background-color 0.5s;
+	}
 
   .img-main-logo1:hover{
   background-color: rgba(255,250,75, 0.95);
