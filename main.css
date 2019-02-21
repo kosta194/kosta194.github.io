@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 body, html {
-  height: calc(100% - 2em);
+  height: 100%;
   margin: 0;
   font-family: 'Staatliches';
 }
