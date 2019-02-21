@@ -6,7 +6,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: 'Staatliches';
-}
+ }
 
 body {
 background: rgb(45,232,255); /* Old browsers */
@@ -28,8 +28,6 @@ aside {
   display: grid;
   grid-template-columns: auto 40px;
   padding: 1em;
-
-
 }
 
 img {
@@ -243,9 +241,9 @@ div.event-photo {
   position: relative;
   border-radius: 15px;
   margin-bottom: 2em;
-  background: rgba(255,50,100,0.95);
+  background: rgba(255,255,255,0.35);
   border-style: solid;
-  border-width: 2px;
+  border-width: 0px;
   border-color: white;
 
 }
@@ -265,12 +263,9 @@ div.dogodek {
   position: relative;
   border-radius: 15px;
   margin-bottom: 2em;
-  background: #fff20c; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #fff20c 32%, #ff9f3f 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #fff20c 32%,#ff9f3f 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #fff20c 32%,#ff9f3f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    border-style: solid;
-  border-width: 2px;
+background: rgba(255,255,250,0.9);
+border-style: solid;
+  border-width: 0px;
   border-color: black;
 }
 
@@ -435,6 +430,7 @@ div.opis-dogodka {
     grid-gap: 15px;
     background-color: none;
     padding: 15px;
+	margin-bottom: 4em;
   }
 
   .photo-grid-dogodek{

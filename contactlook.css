@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 body, html {
-  height: calc(100% - 2em);
+  height: 100% ;
   margin: 0;
   font-family: 'Staatliches';
 }
@@ -79,7 +79,7 @@ nav {
   height: 100%;
   z-index: 20000;
     text-shadow: -1px 1px white;
-  padding-top: 30%;
+  padding-top: 0;
   -webkit-animation: opacity 2s 1;
 }
 
@@ -130,7 +130,7 @@ main {
 
 h1 {
   margin: 0;
-margin-top: -5px;
+margin-top: 0px;
 margin-bottom: 20px;
 text-align: center;
 }
@@ -138,6 +138,15 @@ text-align: center;
 p {
   font-size: 1.1em;
   line-height: 1.5em;
+}
+
+.kontakt {
+padding: 1em;
+background: white;
+padding-bottom: 2em;
+border-radius: 15px;
+margin: 0.5em;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cta {
@@ -199,7 +208,6 @@ z-index: 1000
 position: relative;
  border-radius: 25px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 
@@ -320,6 +328,8 @@ div.container {
     margin: 0;
   }
 
+
+
   ul {
     display: block;
     position: relative !important;
@@ -371,7 +381,7 @@ div.container {
     padding-right: 0em;
     padding-top: 0em;
     width: minmax(min-content, 300px);
-	  -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+	-webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
     transition: background 0.5s;
   }
 
