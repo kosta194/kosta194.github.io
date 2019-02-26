@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="medialook.css">
+    <title>Groovocado/Kontakt</title>
+  </head>
+  <body>
+    <aside>
+      <figure>
+        <div id="avatar"></div>
+        <figcaption>Groovocado</figcaption>
+      </figure>
+      <img src="images/Groovocado-Logo-Avokado-Crnl.png" class='img-menu'>
+	  <img src="images/Groovocado-Logotip-Horizontalen-Bel.png" class='img-menu-web'>
+
+      <nav>
+        <ul class='meni'>
+          <li><a href="events.html" class='meni-gumb'>Koncerti</a></li>
+          <li><a href="band.html" class='meni-gumb'>Band</a></li>
+          <li><a href="contact.html" class='meni-gumb'>Kontakt</a></li>
+          <li><a href="media.html" class='meni-gumb'>Za medije</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div>
+        <img class='img-main-logo' style="width:50vh;heighft:auto;" src="images/Groovocado-Logotip-Vertikalen-Crn.png">
+      </div>
+
+      <div class='media-cgp'>
+
+        <a class='linktext' href="images/Groovocado-Tech_Rider.pdf" target="_blank" download="images/Groovocado-Tech_Rider.pdf"><img class='media-logo' src="images/pdf-file-format-symbol.svg"><p>Tehnični rajder </p></a>
+        <a class='linktext' href="images/Groovocado-opis.pdf" target="_blank" download="images/Groovocado-opis.pdf"><img class='media-logo' src="images/pdf-file-format-symbol.svg"><p>Opis benda</p></a>
+        <a class='linktext' href="images/groovocado-logotip-belaSenca-transp.png" target="_blank" download="images/groovocado-logotip-belaSenca-transp.png"><img class='media-logo' src="images/svg-file-format-variant.svg"><p>Logo vertikalen </p></a>
+        <a class='linktext' href="images/Groovocado-Logotip-Horizontalen-Bel.png" target="_blank" download="images/Groovocado-Logotip-Horizontalen-Bel.png"><img class='media-logo' src="images/svg-file-format-variant.svg"><p>Logo horizontalen </p></a>
+        <a class='linktext' href="images/Groovocado-Skupinska.jpg" target="_blank" download="images/Groovocado-Skupinska.jpg"><img class='media-logo' src="images/svg-file-format-variant.svg"><p>Skupinska fotka</p></a>
+        <a class='linktext' href="images/Groovocado-Skupinska-zNapisom.jpg" target="_blank" download="images/Groovocado-Skupinska-zNapisom.jpg"><img class='media-logo' src="images/svg-file-format-variant.svg"><p>Skupinska fotka z logotom</p></a>
+        <a class='linktext' href="images/Groovocado-PromoVideo-1.mp4" target="_blank" download="images/Groovocado-PromoVideo-1.mp4"><img class='media-logo' src="images/mp4-music-file-format.svg"><p>Promo video 1</p></a>
+        <a class='linktext' href="images/Groovocado-PromoVideo-2.mp4" target="_blank" download="images/Groovocado-PromoVideo-2.mp4"><img class='media-logo' src="images/mp4-music-file-format.svg"><p>Promo video 2</p></a>
+      </div>
+    </main>
+
+    <script>
+
+    (function() {
+        var menu = document.querySelector('ul'),
+            menulink = document.querySelector('img');
+
+        menulink.addEventListener('click', function(e) {
+            menu.classList.toggle('active');
+            e.preventDefault();
+
+        });
+    })();
+    </script>
+  </body>
+  <footer>
+    <div id="noga">
+      <ul class='noga-item-box'>
+        <li><a href="https://www.facebook.com/groovocado/"><img style="display: inline; margin: 0;" class="noga-slike" src="images/facebook.svg"></a></li>
+        <li><a href="https://www.instagram.com/groovocado/"><img style="display: inline; margin: 0;" class="noga-slike" src="images/instagram.svg"></a></li>
+        <li><a href="https://www.youtube.com/channel/UC5nTzsBsCWtVDfwRfUtardw"><img style="display: inline; margin: 0;" class="noga-slike" src="images/youtube.svg"></a></li>
+      </ul>
+    </div>
+  </footer>
+</html>
