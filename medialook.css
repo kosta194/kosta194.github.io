@@ -143,7 +143,7 @@ p {
 
 .media-cgp {
 padding: 1em;
-margin-top: 1em;
+padding-top: 2em;
 background: white;
 border-radius: 15px;
 margin: 0.5em;
@@ -286,8 +286,8 @@ li {
     min-height: 100px;
     margin-bottom: 0;
     max-width: 300px;
-	  -webkit-transition: background 0.8s; /* For Safari 3.1 to 6.0 */
-    transition: background 0.8s;
+	  -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
 	  }
 
   aside:hover{
@@ -373,7 +373,7 @@ li {
   }
 
   footer:hover{
-	background: #44E863;
+		background: #FF1953;
 
   }
 

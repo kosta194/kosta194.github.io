@@ -142,14 +142,14 @@ p {
 }
 
 .kontakt {
-padding: 1em;
-    background: white;
-padding-bottom: 2em;
-border-radius: 15px;
-margin: 0.5em;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-margin-top: 0;
-margin-bottom: 4em;
+  padding: 1em;
+  background: white;
+  padding-bottom: 2em;
+  border-radius: 15px;
+  margin: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0;
+  margin-bottom: 4em;
 }
 
 .cta {
@@ -277,8 +277,8 @@ li {
     min-height: 100px;
     margin-bottom: 0;
     max-width: 300px;
-    -webkit-transition: background 0.8s; /* For Safari 3.1 to 6.0 */
-    transition: background 0.8s;
+    -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
     height: 100vh;
 	  }
 
@@ -345,7 +345,7 @@ li {
     padding-bottom: 0;
     background: white;
     margin-bottom: 2em;
-    border-radius: 25px;
+    border-radius: 1  5px;
     margin-left: 2em;
     margin-right: 2em;
     margin-top: 0;
@@ -382,7 +382,7 @@ li {
   }
 
   footer:hover{
-	   background: #44E863;
+	background: #FF1953;
   }
 
   .noga-item-box {
