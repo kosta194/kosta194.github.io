@@ -10,19 +10,20 @@ body, html {
 
 body {
   background: rgb(45,232,255); /* Old browsers */
-  background: -moz-linear-gradient(-45deg, rgba(45,232,255,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8ff', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-repeat: no-repeat;
+background: -moz-linear-gradient(-45deg, rgba(45,232,255,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8ff', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 @-webkit-keyframes opacity {
     0%   { -webkit-filter: opacity(0); /* Google Chrome & Webkit Nightlies */}
-    30%  { -webkit-filter: opacity(0); /* Google Chrome & Webkit Nightlies */}
+	30%  { -webkit-filter: opacity(0); /* Google Chrome & Webkit Nightlies */}
     100% { -webkit-filter: opacity(1); /* Google Chrome & Webkit Nightlies */ }
 }
+
 
 .img-main-logo1 {
   position: relative;
@@ -34,10 +35,11 @@ body {
   -webkit-animation: opacity 1s 1;
 }
 
+
 .overlay {
   height: 90%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -66,37 +68,6 @@ body {
   font-size: 36px;
   color: rgba(0,0,0, 0.95);
   display: block;
-}
-
-.lang{
-  display: block;
-  display: block;
-  position: fixed;
-  float: left;
-  bottom: 0;
-  margin: 4px;
-  padding-top: 5px;
-  padding-left: 3px;
-  padding-right: 3px;
-  color: black;
-  font-size: 18px;
-  background: white;
-  border-radius: 5px;
-  border: solid 2px black;
-  width: 24px;
-	height: 24px;
-	text-align: center;
-	vertical-align: middle;
-  z-index: 100000;
-  -webkit-animation: opacity 2s 1;
-}
-
-.lang:link {
-  text-decoration: none;
-}
-
-.lang:active {
-  background-color: hotpink;
 }
 
 img {
@@ -231,7 +202,10 @@ li {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px ;    font-family: 'Staatliches';
   }
+
+
 }
+
 
 @media only screen and (min-width: 769px) {
 
@@ -303,7 +277,6 @@ li {
     margin-top: 0;
   }
 
-
   .noga-slike {
     width: 8em;
     margin-left: auto;
@@ -372,35 +345,6 @@ li {
     background: white;
   }
 
-  .lang{
-    display: block;
-    position: fixed;
-    left: auto;
-    top: 0;
-    right: 0;
-    margin: 1em;
-    margin-top: 1em;
-    margin-left: 0;
-    padding-top: 4px;
-    padding-left: 3px;
-    padding-right: 3px;
-    color: black;
-    font-size: 18px;
-    background: white;
-    border-radius: 5px;
-    border: solid 2px black;
-    width: 24px;
-    height: 24px;
-  }
-
-
-
-  .lang:hover{
-    color: #3ECEFF;
-    text-shadow: none;
-    background: blue;
-  }
-
   .main-logo-head {
     -webkit-filter: invert(1);
     filter: invert(1);
@@ -437,25 +381,25 @@ li {
 	  margin-right: auto;
 	  top: 20%;
 	  width: 50%;
-	  margin-top: -20%;
+	  margin-top: 2%;
 	  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
 		transition: background-color 0.5s;
 	}
 
 
-  .overlay-content {
-    display: block;
-    position: fixed;
-    top: 70%;
-    width: 100%;
-    text-align: center;
-    margin-top: 0px;
-    font-family: 'Staatliches';
-    opacity: 1;
-    margin-left: auto;
-    margin-right: auto;
-    background: none;
-    }
+.overlay-content {
+  display: block;
+  position: fixed;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  font-family: 'Staatliches';
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  }
 
   .overlay a {
     text-decoration: none;

@@ -41,15 +41,11 @@ img {
   cursor: pointer;
   position: fixed;
   right: 0;
-  margin-right: 15px;
-  top: 0;
-  margin-top: 15px;
+  margin-right: 3vh;
   z-index: 1000000;
-  background: rgb(255, 94, 135);
-  opacity: 1;
+  background: #FF1953;
+  opacity: 0.7;
   border-radius: 100%;
-  border: solid 1px white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-menu-web {
@@ -97,35 +93,6 @@ ul li a {
   display: block;
   padding: 1.5em 3em;
   background-color: none;
-}
-
-.lang{
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 4px;
-  padding-top: 5px;
-  padding-left: 0;
-  padding-right: 3px;
-  color: black;
-  font-size: 18px;
-  background: white;
-  border-radius: 5px;
-  border: solid 2px black;
-  width: 24px;
-	height: 24px;
-	text-align: center;
-	vertical-align: middle;
-  z-index: 100000;
-}
-
-.lang:link {
-  text-decoration: none;
-}
-
-.lang:active {
-  background-color: hotpink;
 }
 
 .meni {
@@ -299,7 +266,7 @@ div.dogodek {
   position: relative;
   border-radius: 15px;
   margin-bottom: 2em;
-  Background: white;
+  Background: rgba(255,250,75, 1);
   border-style: solid;
   border-width: 0px;
   border-color: black;
@@ -312,8 +279,7 @@ h2 {
 div.opis-dogodka {
   text-align: center;
   padding: 10px 20px;
-  margin-top: -20px;
-
+  B
 }
 
 .photo-grid{
@@ -453,27 +419,6 @@ div.opis-dogodka {
     font-size: 4px;
 	}
 
-  .lang{
-    display: block;
-    position: fixed;
-    left: auto;
-    top: 0;
-    right: 0;
-    margin: 1em;
-    margin-top: 1em;
-    margin-left: 0;
-    padding-top: 4px;
-    padding-left: 3px;
-    padding-right: 3px;
-    color: black;
-    font-size: 18px;
-    background: white;
-    border-radius: 5px;
-    border: solid 2px black;
-    width: 24px;
-  	height: 24px;
-  }
-
   .meni {
     font-style: #FF1953;
     font-size: 1.8em;
@@ -484,19 +429,14 @@ div.opis-dogodka {
 
   div.opis-dogodka {
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    border: solid 5px black;
-    border-radius: 15px;
-    background: white;
+    padding: 10px 20px;
   }
 
   .photo-grid{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
     max-width: 100%;
-    grid-gap: 10px;
+    grid-gap: 15px;
     background-color: none;
     padding: 15px;
 	margin-bottom: 4em;
@@ -508,7 +448,6 @@ div.opis-dogodka {
     grid-gap: 15px;
     background-color: none;
     padding: 15px;
-
   }
 
   .photo{
@@ -543,11 +482,14 @@ div.opis-dogodka {
   }
 
    div.dogodek {
-    width: 50vw;
-	  height: auto;
+    width: 60vw;
+	height: auto;
     margin-left: auto;
     margin-right: auto;
-    background:  white;
+    background: -moz-linear-gradient(-45deg, rgba(255,25,83,0.95) 0%, rgba(255,25,83,0.97) 32%, rgba(255,25,83,0.99) 66%, rgba(255,255,130,0.99) 70%, rgba(255,25,83,0.99) 71%, rgba(255,255,130,0.99) 75%, rgba(255,255,130,0.99) 80%, rgba(255,25,83,0.99) 84%, rgba(255,25,83,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(255,25,83,0.95) 0%,rgba(255,25,83,0.97) 32%,rgba(255,25,83,0.99) 66%,rgba(255,255,130,0.99) 70%,rgba(255,25,83,0.99) 71%,rgba(255,255,130,0.99) 75%,rgba(255,255,130,0.99) 80%,rgba(255,25,83,0.99) 84%,rgba(255,25,83,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(255,25,83,0.95) 0%,rgba(255,25,83,0.97) 32%,rgba(255,25,83,0.99) 66%,rgba(255,255,130,0.99) 70%,rgba(255,25,83,0.99) 71%,rgba(255,255,130,0.99) 75%,rgba(255,255,130,0.99) 80%,rgba(255,25,83,0.99) 84%,rgba(255,25,83,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ff1953', endColorstr='#ff1953',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     border-radius: 15px;
@@ -555,7 +497,6 @@ div.opis-dogodka {
     margin-bottom: 0em;
     padding-top: 0em;
 	border-style: none;
-
     }
 
   div.event-photo {

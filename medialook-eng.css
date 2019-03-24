@@ -43,15 +43,12 @@ img {
   cursor: pointer;
   position: fixed;
   right: 0;
-  margin-right: 15px;
-  top: 0;
-  margin-top: 15px;
+  margin-right: 3vh;
   z-index: 1000000;
-  background: rgb(255, 94, 135);
-  opacity: 1;
+  background: #FF1953;
+  opacity: 0.7;
   border-radius: 100%;
-  border: solid 1px white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .img-menu-web {
@@ -104,35 +101,6 @@ ul li a {
 
 }
 
-.lang{
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 4px;
-  padding-top: 5px;
-  padding-left: 0;
-  padding-right: 3px;
-  color: black;
-  font-size: 18px;
-  background: white;
-  border-radius: 5px;
-  border: solid 2px black;
-  width: 24px;
-	height: 24px;
-	text-align: center;
-	vertical-align: middle;
-  z-index: 100000;
-}
-.lang:link {
-  text-decoration: none;
-}
-
-.lang:active {
-  background-color: hotpink;
-}
-
-
 .meni {
 	text-align: center;
   font-style: #FF8200;
@@ -173,16 +141,25 @@ p {
   line-height: 1.5em;
 }
 
-.kontakt {
-  padding: 1em;
-  background: white;
-  padding-bottom: 2em;
-  border-radius: 15px;
-  margin: 0.5em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 0;
-  margin-bottom: 4em;
+.media-cgp {
+padding: 1em;
+padding-top: 2em;
+background: white;
+border-radius: 15px;
+margin: 0.5em;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+margin-bottom: 3em;
 }
+
+.linktext{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 1em;
+  }
 
 .cta {
   display: block;
@@ -194,8 +171,10 @@ p {
   text-align: center;
   font-weight: bold;
   border-radius: 4px;
-  margin: 2em 0;
+  margin: 2em;
 }
+
+
 
 footer {
   position: fixed;
@@ -263,8 +242,6 @@ li {
 }
 
 
-
-
 @media only screen and (min-width: 768px) {
 
   body {
@@ -292,11 +269,11 @@ li {
     padding-top: 0;
     font-style: black;
     margin-top: 1em;
-	position: fixed ;
-	width: 14em;
-	-webkit-filter: invert(1);
-	filter: invert(1);
-	cursor: initial;
+	  position: fixed ;
+   	width: 14em;
+	  -webkit-filter: invert(1);
+	  filter: invert(1);
+	  cursor: initial;
   }
 
   .img-menu {
@@ -304,14 +281,13 @@ li {
   }
 
   aside{
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 62, 143, 0.08);
     padding: 0;
     min-height: 100px;
     margin-bottom: 0;
     max-width: 300px;
-    -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+	  -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
     transition: background 0.5s;
-    height: 100vh;
 	  }
 
   aside:hover{
@@ -320,9 +296,8 @@ li {
 
   main {
     padding: 0em;
-    padding-top: 2em;
+    padding-top: 02em;
     background-size: 100%;
-
   }
 
   .main-display {
@@ -347,8 +322,6 @@ li {
     margin: 0;
   }
 
-
-
   ul {
     display: block;
     position: relative !important;
@@ -369,20 +342,6 @@ li {
     padding-bottom: 2em;
     background: none;
     border-radius: 25px;
-  }
-
-  .kontakt {
-    padding: 2em;
-    padding-top: 0;
-    padding-bottom: 0;
-    background: white;
-    margin-bottom: 2em;
-    border-radius: 1  5px;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 2em;
-	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   }
 
   .noga-slike {
@@ -409,12 +368,13 @@ li {
     padding-right: 0em;
     padding-top: 0em;
     width: minmax(min-content, 300px);
-	   -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+	-webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
     transition: background 0.5s;
   }
 
   footer:hover{
-	background: #FF1953;
+		background: #FF1953;
+
   }
 
   .noga-item-box {
@@ -426,27 +386,6 @@ li {
     margin-top: 0em;
     font-size: 4px;
 	 }
-
-   .lang{
-     display: block;
-     position: fixed;
-     left: auto;
-     top: 0;
-     right: 0;
-     margin: 1em;
-     margin-top: 1em;
-     margin-left: 0;
-     padding-top: 4px;
-     padding-left: 3px;
-     padding-right: 3px;
-     color: black;
-     font-size: 18px;
-     background: white;
-     border-radius: 5px;
-     border: solid 2px black;
-     width: 24px;
-     height: 24px;
-   }
 
   .meni {
     font-style: #FF1953;
@@ -480,6 +419,23 @@ li {
     display: grid;
     align-content: right;
     margin: auto;
+  }
+
+  .media-cgp {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 1em;
+    padding: 2em;
+    background: white;
+    padding-bottom: 2em;
+    border-radius: 15px;
+    margin: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
   }
 
   .img-main-logo {
