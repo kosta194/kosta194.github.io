@@ -1,0 +1,103 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Staatliches';
+}
+
+body {
+  background: rgb(45,232,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(45,232,255,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8ff', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img-main-logo1 {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5vh;
+  background-color: white;
+  border-radius: 100%;
+  width: 250px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+main {
+  padding: 0em;
+  padding-top: 2em;
+  background-size: 100%;
+}
+
+
+.opis {
+  bottom: 0;
+  padding: 10px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.slika{
+  width: 30px;
+  padding-left: auto;
+  padding-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100%;
+  background-color: white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  text-align: center;
+  min-width: 13em;
+  background: none;
+  z-index: 10001;
+
+}
+
+.noga-item-box {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 0.5vh;
+  padding: 0em;
+  background-color: none;
+  display: inline-flex;
+  margin: 0;
+  z-index: 30000;
+}
+
+.kontakt {
+  text-align: center;
+  margin-top: 8em;
+  background: none;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.noga-slike {
+  display: inline-block;
+  width: 35px;
+  z-index: 30000;
+  background-color:  none;
+  border-radius: 5px;;
+
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+
+}

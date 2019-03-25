@@ -1,0 +1,40 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Staatliches';
+}
+
+body {
+  background: rgb(45,232,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(45,232,255,1) 44%, rgba(35,137,245,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(45,232,255,1) 44%,rgba(35,137,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2de8ff', endColorstr='#2389f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img-main-logo1 {
+  position: relative;
+  display: block;
+  margin-left: 15.5vw;
+  top: 15vh;
+}
+
+.kontakt {
+  text-align: center;
+  background: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.opis {
+
+  padding: 10px;
+  margin-top: 80%;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
